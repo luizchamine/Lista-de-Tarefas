@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCadastrarComentario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrarComentario.Designer.cs">
+      <DependentUpon>FormCadastrarComentario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCadastrarTarefa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCadastrarComentario.resx">
+      <DependentUpon>FormCadastrarComentario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCadastrarTarefa.resx">
       <DependentUpon>FormCadastrarTarefa.cs</DependentUpon>
     </EmbeddedResource>

@@ -56,7 +56,7 @@ namespace DAL
                 cn.Close();
             }
         }
-        public DataTable Buscar(string _id_Tarefa)
+        public DataTable Buscar(int _id_Tarefa)
         {
             SqlDataAdapter da = new SqlDataAdapter();
             DataTable dt = new DataTable();

@@ -76,5 +76,38 @@ namespace UITarefa
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //buttonAdicionarComentario
+            using (FormCadastrarComentario frm = new FormCadastrarComentario())
+            {
+                frm.ShowDialog();
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comentarioDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void buttonBuscarComentario_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ComentarioBLL comentarioBLL = new ComentarioBLL();
+                // tarefaBindingSource.DataSource = comentarioBLL.Buscar(textBoxBuscarComentario.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
